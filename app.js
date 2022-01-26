@@ -1,18 +1,33 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-const link = document.querySelector("a");
+const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
 
 
 function onLoginSubmit(event){
     event.preventDefault(); // 페이지가 새로고침되지 않도록 막아줌
-    console.log(loginInput.value);
+    loginForm.classList.add(HIDDEN_CLASSNAME); // 클래스 추가
+    const username = loginInput.value;
+    localStorage.setItem(USERNAME_KEY, username);
+    paintGreetings(username);
 }
 
-function handleLinkClick(event){
-    event.preventDefault();
-    alert("clicked!");
+
+function paintGreetings(username) {
+    greeting.innerText = `Hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-loginForm.addEventListener("submit", onLoginSubmit);
-link.addEventListener("click", handleLinkClick);
+
+
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+if(savedUsername === null){
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.addEventListener("submit", onLoginSubmit);
+
+} else {
+    paintGreetings(savedUsername);
+}
