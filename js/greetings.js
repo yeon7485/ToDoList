@@ -21,7 +21,6 @@ function paintGreetings(username) {
 }
 
 
-
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if(savedUsername === null){
