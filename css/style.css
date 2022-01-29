@@ -4,21 +4,29 @@
 
 #clock {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 100px;
-    font-family: 'Balsamiq Sans', cursive;
+    font-size: 120px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 #greeting {
+    position: absolute;
+    top:  55%;
+    left:  50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Nanum Gothic', sans-serif;
     text-align: center;
 }
 
 #quote {
+    position: absolute;
+    top:  95%;
+    left:  50%;
+    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
 }
