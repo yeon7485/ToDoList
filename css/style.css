@@ -1,6 +1,39 @@
 .hidden {
     display: none;
 }
+#login-form {
+    position: absolute;
+    top:  60%;
+    left:  50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-et {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    border-bottom: solid 2px white;
+}
+
+#login-et::placeholder {
+    color: white;
+}
+
+#login-btn {
+    color: white;
+    margin-left: 10px;
+    padding: 10px 10px;
+    background: none;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    border: solid 2px white;
+    border-radius: 10px 10px 10px 10px;
+}
+
 
 #clock {
     position: absolute;
@@ -14,7 +47,7 @@
 
 #greeting {
     position: absolute;
-    top:  55%;
+    top:  57%;
     left:  50%;
     transform: translate(-50%, -50%);
     color: white;
