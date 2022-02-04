@@ -1,9 +1,30 @@
 .hidden {
     display: none;
 }
+
+#weather {
+    margin: 10px 10px;
+    color: white;
+    font-size: 17px;
+    text-align: end;   
+    font-style: italic;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+#clock {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 120px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 로그인 */
 #login-form {
     position: absolute;
-    top:  60%;
+    top:  52%;
     left:  50%;
     transform: translate(-50%, -50%);
 }
@@ -14,7 +35,7 @@
     border: none;
     background: none;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Nanum Gothic', sans-serif;
     border-bottom: solid 2px white;
 }
@@ -34,20 +55,10 @@
     border-radius: 10px 10px 10px 10px;
 }
 
-
-#clock {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 120px;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-
+/* 환영 인사 */
 #greeting {
     position: absolute;
-    top:  57%;
+    top:  48%;
     left:  50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -55,16 +66,64 @@
     text-align: center;
 }
 
+/* 할 일 리스트 */
+#todo-form {
+    position: absolute;
+    top:  60%;
+    left:  50%;
+    transform: translate(-50%, -50%);
+}
+
+#todo-write {
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    border-bottom: solid 2px white;
+}
+
+#todo-write::placeholder {
+    color: white;
+}
+
+#todo-list {
+    position: absolute;
+    top:  70%;
+    left:  50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#todo-list li{
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    
+    color: white;
+}
+
+#todo-list button {
+    background: none;
+    margin-left: 5px;
+    border: solid 1px white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/* 명언 */
 #quote {
     position: absolute;
-    top:  95%;
+    top:  97%;
     left:  50%;
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
 }
-
-
 
 /* 배경 이미지 */
 .bgImage {
