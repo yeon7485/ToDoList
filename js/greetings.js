@@ -6,7 +6,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 
-function onLoginSubmit(event){
+function onLoginSubmit(event) {
     event.preventDefault(); // 페이지가 새로고침되지 않도록 막아줌
     loginForm.classList.add(HIDDEN_CLASSNAME); // 클래스 추가
     const username = loginInput.value;
@@ -23,7 +23,7 @@ function paintGreetings(username) {
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
-if(savedUsername === null){
+if (savedUsername === null) {
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", onLoginSubmit);
 
